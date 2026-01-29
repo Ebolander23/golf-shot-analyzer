@@ -66,26 +66,38 @@ st.markdown("""
     .main-header {
         font-size: 2.5rem;
         font-weight: bold;
-        color: #1a1a2e;
         text-align: center;
         margin-bottom: 0.5rem;
     }
     .sub-header {
         font-size: 1.1rem;
-        color: #666;
         text-align: center;
         margin-bottom: 2rem;
     }
-    .metric-card {
-        background-color: #f8f9fa;
+    
+    /* metric card styling - works in both light and dark mode */
+    [data-testid="stMetric"] {
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        padding: 1rem;
         border-radius: 10px;
-        padding: 1rem;
-        margin: 0.5rem 0;
     }
-    .stMetric {
-        background-color: #f0f2f6;
-        padding: 1rem;
-        border-radius: 8px;
+    
+    /* metric label (e.g., "Ball Speed", "Carry Distance") */
+    [data-testid="stMetricLabel"] {
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+    }
+    
+    /* metric value (e.g., "133.7 mph") */
+    [data-testid="stMetricValue"] {
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+    }
+    
+    /* metric delta (e.g., "±20.3 std") */
+    [data-testid="stMetricDelta"] {
+        font-size: 0.85rem !important;
     }
 </style>
 """, unsafe_allow_html=True)
