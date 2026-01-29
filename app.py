@@ -218,7 +218,7 @@ with st.sidebar:
     - Interactive dashboards
     - Golf domain expertise
     
-    [GitHub](https://github.com/ericbolander) | [LinkedIn](https://linkedin.com/in/ericbolander)
+    [GitHub](https://github.com/Ebolander23) | [LinkedIn](https://www.linkedin.com/in/eric-bolander-b1333b176/)
     """)
 
 
